@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Resume</title>
+        <meta name="author" content="rohan"/>
+        <meta name="description" content="template of resume, this is a generic tamplate for your resume, it is crafted using modular approach, that helps you arrange different sections or components to fit your need."/>
+        <link rel="favicon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"/>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+        <style>
+            h1, h5, h4, h6 {
+                font-family: "Caveat", cursive;
+                font-size: 18px;
+                padding: 0px;
+                margin: 0px;
+            }
+            .container_one {
+                margin: 0px;
+            }
+            .container_two {
+                display: grid;
+                margin: 40px;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            #work {
+                grid-column: 2;
+            }
+            #education {
+                grid-column: 3;
+            }
+            #projects {
+                grid-column:1;
+            }
+            #open_source_contribution {
+                grid-column: 1/2;
+            }
+            .container_three {
+                display: flex;
+            }
+            .container_three > p {
+                border: 2px black solid;
+                margin: 5px;
+                padding: 10px;
+                border-radius: 15px;
+            }
+            @media (min-width: 678px){   
+                nav {
+                    display: flex;
+                }
+                p {
+                    flex-grow:1/3;   
+                }
+                header > nav > ul {
+                    display: flex;
+                    flex-grow: 2;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    gap: 50px;
+                    flex-wrap: wrap;
+                    list-style: none;
+                }
+                img {
+                    align-items: center;
+                    margin-right: 10px;
+                }
+            }
+            
+            @media (max-width: 687px) {
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                }   
+                p {
+                    align-self: center;
+                } 
+                header > nav > ul {
+                    display: flex;
+                    padding-inline-start: 0px;
+                    justify-content: space-around;
+                    list-style: none;
+                    flex-wrap: wrap;
+                }
+                img {
+                    align-self: center;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="favicon.ico"/>
+                <p>your name</p>
+                <ul>
+                    <li>Home</li>
+                    <li>/</li>
+                    <li>Projects</li>
+                    <li>/</li>
+                    <li>Articles</li>
+                    <li>/</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section class="container_one">
+                    <h1>Frontend Developer</h1>
+                    <h5>html only with proper layout, no styling.</h6>
+                </section>
+                
+                <section class="container_two">
+                    <div id="projects">
+                        <h5>Projects</h5>
+                        <p>HTML Only Portfolio</p>
+                        <p>Calculator</p>
+                        <p>Quiz App</p>
+                        <p>Countdown Timer</p>
+                        <p>Product Upcoming Page</p>
+                    </div>
+                    <div id="work">
+                        <h5>Work</h5>
+                        <h6>roadmap.sh</h6>
+                        <p>Solved all the frontend projects</p>
+                        <a>Visit my profile</a>
+                    </div>
+                    <div id="education">
+                        <h5>Education</h5>
+                        <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                        <p>Courses I took:</p>
+                        <ul>
+                            <li>Object Oriented Programming</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Web Engineering</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Human Computer Interaction</li>
+                            <li>Computer Graphics</li>
+                            <li>Database Management Systems</li>
+                            <li>Distributed Database Systems</li>
+                            <li>Discreet Mathematics</li>        
+                        </ul>
+                    </div>
+                    <div id="open_source_contribution">
+                        <h5>OpenSource Work</h5>
+                        <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                        <a href="github.io/d0nest">Visit my GitHub Profile</a>
+                    </div>
+                </section>
+                <h5>Reviews from my Teachers<h5>
+                <section class="container_three">
+                        <p>John doe was a brilliant student; until he met me.<br> Jane Doe<br> Assistant Professor</p>
+                        <p>John doe was a brilliant student; until he met me. <br>Jane Doe <br> Assistant Professor</p>
+                        <p>John doe was a brilliant student; until he met me.<br> Jane Doe<br> Assistant Professor</p>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>

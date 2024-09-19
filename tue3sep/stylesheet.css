@@ -1,0 +1,50 @@
+   body {
+       margin: 0px;
+       padding: 0px;
+   }
+
+   nav > ul {
+       list-style: none;
+       display: flex;
+       background-color: green;
+       justify-content: space-between;
+       border: green solid 1.5px;
+       margin: 0px;
+       padding: 0px;
+   }
+
+   li {
+       flex:1;
+       text-align: center;
+       color: white;
+       padding: 15px;
+       border-right: 1px solid white;
+   }
+   
+   li:hover{
+    color:green;
+    background-color: white;
+   }
+   
+   .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+   
+   .container > button {
+      margin: 10px;
+      padding: 10px;
+   }
+   
+   footer {
+    background-color: green;
+   }
+   
+   div > ul {
+    list-style: none;
+    display: flex;  
+   }
+   
+   p {
+
+   }
